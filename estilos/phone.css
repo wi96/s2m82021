@@ -1,5 +1,54 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+div, li{
+	padding: 10px;
+}
+body{
+	color:#666;
+}
+li{
+	list-style: none;
+	background-color: #aaa;
+	height: 90px;
+	border: 3px solid #fff;
+}
+#header{
+	background-color: rgba(255,255,255,0.8);
+}
+#menu{
+	background-color: purple;
+}
+#menu li{
+	height: 50px;
+	background-color: yellow;
+}
+#main{
+	background-color: rgba(255,255,255,0.5);
+}
+#aside{
+	background-color: rgba(255,255,255,0.3);
+}
+#footer{
+	background-color: rgba(255,255,255,0.1);
+
+}
 @media screen and (max-width:480px){
 	body{
 		background-color: tomato;
+	}
+	#header{
+		
+	}
+	#main{
+		
+	}
+	#aside{
+		
+	}
+	#footer{
+		height: 100px;
 	}
 }

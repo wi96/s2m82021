@@ -2,4 +2,38 @@
 	body{
 		background-color: lightblue;
 	}
+	#main li{
+		width: 25%;
+		float: left;
+	}
+	#aside li{
+		width: 100%;
+	}
+	#header{
+		
+	}
+	#menu{
+		overflow: hidden;
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	#menu li{
+		width: 16.667%;
+		float: left; 
+	}
+	#main{
+		width: 70%;
+		float: left;
+		overflow: hidden;
+	}
+	#aside{
+		width: 30%;
+		float: left;
+		overflow: hidden;
+	}
+	#footer{
+		height: 100px;
+		clear: both;
+	}
 }
