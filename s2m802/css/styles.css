@@ -50,6 +50,7 @@ body{
 	margin: 0 15px;
 	display: inline-block;
 	text-align: center;
+	cursor:pointer;
 }
 .bola img{
 	width: 100%;
@@ -72,17 +73,17 @@ body{
 }
 .user {
 	border-top: 2px solid #ddd;
-	height: 7vh;
-	padding-top: 5px;
+	height: 8vh;
+	align-items: center;
+	display: flex;
 }
-.bolauser{
+.bolauser {
 	width: 5vh;
 	height: 5vh;
 	border-radius: 50%;
 	background-color: #fff;
-    background: linear-gradient(to right, #e4405f, #feda77);
+	background: linear-gradient(to right, #e4405f, #feda77);
 	margin: 0 15px;
-	display: inline-block;
 	text-align: center;
 }
 .user img{
@@ -95,16 +96,20 @@ body{
 	font-size: 16px;
 	font-weight: 100;
 }
-.trespuntos {
-	float: right;
-	line-height: 7vh;
-	margin-right: 25px;
+.textouser {
+	vertical-align: middle;
+	float: left;
+	line-height: 2.4;
 }
-.foto{
+.trespuntos {
+	position: absolute;
+	right: 15px;
+}
+.foto {
 	width: 100%;
 	background-color: #ddd;
-	overflow-x: auto;
-	scrollbar-width:none;
+	overflow-y: hidden;
+	scrollbar-width: none;
 	height: 48vh;
 }
 .cajafoto{
