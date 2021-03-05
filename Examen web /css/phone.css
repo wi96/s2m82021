@@ -172,7 +172,6 @@
 #tallacolor {
 	height: 70px;
 	background-color: #f3f3f3;
-	padding-top: 12px;
 }
 	#tallacolor h3 {
 	font-size: 16px;
@@ -208,6 +207,7 @@
 	color: #ddd;
 	text-align: center;
 	margin: 0 auto;
+	text-decoration: none;
 }
 .check3 {
 	width: 50%;
@@ -222,6 +222,21 @@
 	.check3:checked ~ #eleccion{
 		display: block;
 	}
+	#biciprimera {
+	height: 301px;
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+}
+	#biciscompra img {
+	width: 85%;
+	margin: 0 auto;
+}
+	#cerrar {
+	height: 50px;
+	width: 50px;
+	background-color: #000;
+	float: right;
+}
 }
 
 
