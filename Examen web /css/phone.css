@@ -1,0 +1,227 @@
+@media screen and (max-width:480px){
+	#menu{
+		position: absolute;
+		top: 50px;
+		left: -100%;
+		width: 100%;
+	}
+	#menu a {
+		list-style: none;
+		text-decoration: none;
+		color: #000;
+		height: 50px;
+		border-bottom: 1px solid #fff;
+		width: 100%;
+		align-items: center;
+		display: flex;
+		padding-left: 15px;
+}
+	#menu > li {
+		background-color: #f3f3f3;
+	}
+	.sub{
+		display: none;
+		background-color: #fff;
+	}
+	.sub li{
+		border-bottom: 1px solid #f3f3f3;
+	}
+	.sub a {
+		font-size: 26px;
+	}
+	.subsub{
+		display: none;
+	}
+	.sub li{
+		border-bottom: none;
+	}
+	.subsub a {
+		font-size: 18px;
+	}
+	.colu1peque a {
+		font-weight: 300;
+		font-size: 16px;
+	}
+	.colu2peque a {
+		font-weight: 300;
+		font-size: 16px;
+	}
+	#orca span {
+		display: none;
+	}
+	#orcaaero span {
+		display: none;
+	}
+	#avant span {
+		display: none;
+	}
+	#terra span {
+		display: none;
+	}
+	#orca:hover span {
+		display: block;
+		float: right;
+		color: #4A4A4A;
+	}	
+	#orcaaero:hover span {
+		display: block;
+		float: right;
+		color: #4A4A4A;
+	}
+	#avant:hover span {
+		display: block;
+		float: right;
+		color: #4A4A4A;
+	}
+	#terra:hover span {
+		display: block;
+		float: right;
+		color: #4A4A4A;
+	}
+	.check{
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		top:0;
+		right:0;
+		opacity: 0;
+		z-index: 9;
+		cursor: pointer;
+	}
+	.check:checked ~ #menu{
+		left: 0;
+	}
+	#burger{
+		position: absolute;
+		right: 0;
+		top:0;
+		background-color: #fff;
+		width: 50px;
+		height: 50px;
+		padding-top: 10px;
+	}
+	#burger li{
+		background-color: #000;
+		width: 20px;
+		height: 2px;
+		margin: 5px auto;
+		border-radius: 15px;
+		list-style: none;
+	}
+	.comprar {
+		height: 9vh;
+		width: 50vw;
+		position: fixed;
+		left:0;
+		bottom:0;
+	}
+	.precio {
+		height: 8vh;
+		width: 50vw;
+		position: fixed;
+		right:0;
+		bottom:0;
+	}
+	.comprar a {
+		font-size: 16px;
+	}	
+	.precio a {	
+		font-size: 16px;
+	
+	}
+#despliega {
+	width: 20px;
+	height: 20px;
+	color: #000;
+}
+#pliega {
+	width: 20px;
+	height: 20px;
+	color: #000;
+}
+	.colores {
+	width: 50px;
+	margin-top: 50px;
+}
+	.datosbici {
+	margin-top: 50px;
+}
+	.datosbici h2 {
+	font-size: 28px;
+	line-height: 25px;
+	margin-bottom: 20px;
+}
+	#blanco{
+	margin: 5px 0;
+}
+#azul{
+	margin: 5px 0;
+}
+#negro{
+	margin: 5px 0;
+}
+#eleccion {
+	height: 100vh;
+	background-color: #fff;
+	width: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: none;
+}
+#tallacolor {
+	height: 70px;
+	background-color: #f3f3f3;
+	padding-top: 12px;
+}
+	#tallacolor h3 {
+	font-size: 16px;
+	font-weight: 400;
+	margin-left: 20px;
+}
+#biciscompra {
+	width: 40%;
+	float: left;
+	height: 300px;
+	align-items: center;
+	display: flex;
+}
+	#biciscompra img {
+	  width: 100%;
+	}
+#tallas {
+	width: 60%;
+	height: 300px;
+	float: right;
+	background-color: #fff;
+}
+.talla1 {
+	width: 70px;
+	height: 70px;
+	border: 3px solid #ddd;
+	float: right;
+	margin: 5px;
+	align-items: center;
+	display: flex;
+}
+.talla1 a {
+	color: #ddd;
+	text-align: center;
+	margin: 0 auto;
+}
+.check3 {
+	width: 50%;
+	height: 8vh;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	z-index: 9;
+	cursor: pointer;
+}
+	.check3:checked ~ #eleccion{
+		display: block;
+	}
+}
+
+
