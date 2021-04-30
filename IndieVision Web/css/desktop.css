@@ -1,4 +1,7 @@
 @media screen and (min-width:800px){
+	main{
+		padding-top: 122px;
+	}
 	#menu li {
 	padding: 10px 10px;
 	display: inline-block;
@@ -43,7 +46,7 @@
     text-align: center;
   }
 	  .header_perfil {
-    height: 150px;
+    height: 250px;
   } 
   
   .header_perfil i {
