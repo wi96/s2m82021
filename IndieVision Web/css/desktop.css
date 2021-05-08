@@ -52,4 +52,24 @@
   .header_perfil i {
     right: -90%;
   }
+/*++++++++++++++++++++ EN DIRECTO ++++++++++++++++++*/
+	.caja_directos {
+	display: inline-flex;
+	justify-content: center;
+	}
+		.directo_1 {
+		width: 40%;
+	}
+		.directo_2 {
+		width: 40%;
+	}
+	/*++++++++++++++++++++ VIDEOS GRUPOS ++++++++++++++++++*/
+	.caja_videos_grupos {
+	display: inline-flex;
+	justify-content: center;
+	}
+		.video_1 {
+		width: 40%;
+	}
+
 }

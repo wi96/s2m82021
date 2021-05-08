@@ -35,14 +35,60 @@
 @keyframes spin {
   100% {  transform: rotate(359deg); }
   }
+/*++++++++++++ EN DIRECTO +++++++++++++++++*/
+
+.boton_directo{
+  display: block;
+  font-weight: 700;
+  position: relative;
+  text-decoration: none;
+  transition: all .2s;
+  z-index: 1;
+  outline: none;
+}
+
+.boton_directoe{
+  padding-right: 22px; 
+}
+
+span.icono_directo {
+	display: inline-block;
+	top: calc(50% - 5px);
+	background-color: red;
+	width: 10px;
+	height: 10px;
+	margin-left: 15px;
+	border-radius: 50%;
+	z-index: 1;
+}
+    span.icono_directo:before{
+      content: '';
+      display: block;
+      position: absolute;
+      background-color: rgba(255,0,5,0.1);
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      animation: directo 2s ease-in-out infinite;
+      z-index: -1;
+    }
+@keyframes directo {
+  0% {
+    transform: scale(1,1);
+  }
+  100% {
+    transform: scale(3.5,3.5);
+    background-color: rgba(red,0);
+  }
+}
 /*++++++++++++++++++++++++ INICIO ++++++++++++++++++++++++++++*/
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Montserrat', Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	font-size: 18px;
-	line-height: 22px;
+	font-size: 16px;
+	line-height: 20px;
 	list-style: none;
 }
 
@@ -460,7 +506,7 @@ html,body {
 	width: 100%;
 	height: 50px;
 	background: #EF7D05;
-	z-index: 2;
+	z-index: -1;
 	box-shadow: 0px 0px 4px 0px #000;
 }
 
@@ -716,12 +762,7 @@ input.textarea {
 
 /*+++++++++++++++++++++ MURO ++++++++++++++++++++*/
 
-h1 {
-  text-align: center;
-  margin: 3rem auto 0.8rem;
-  color: #fff;
-  font-weight: 700;
-}
+
 
 .caja_muro {
 	display: block;
@@ -906,9 +947,25 @@ h1 {
 
 .footer {
 	background: #222;
-	padding: 150px 0px 0px 0px;
+	padding: 10px 0px 0px 0px;
 	text-align: center;
 }
+.redes_sociales_footer {
+	margin: 5px 0 12px 0;
+	text-align: center;
+	display: inline-block;
+	font-size: 40px;
+}
+
+.redes_sociales_footer i {
+  cursor: pointer;
+  margin: 0 15px;
+	color: #ddd;
+}
+.redes_sociales_footer i:hover {
+	color: #EF7D05;
+}
+
 
 .caja_footer_iconos{
 	width:100%;
@@ -1058,6 +1115,403 @@ color:#fff;
   background: #EF7D05;
 }
 
+/*+++++++++++++++++ DIRECTO ++++++++++++++++*/
+.titulo_directo h1 {
+	width: 80%;
+	font-size: 30px;
+	line-height: 28px;
+	color: #EF7D05;
+}
+.titulo_directo p {
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+	.caja_directos {
+	justify-content: center;
+	}
+.directo_1 {
+	width: 90%;
+	margin: 0 auto;
+}
+.directo_2 {
+	width: 90%;
+	margin: 0 auto;
+}
+.directo_1 h2 {
+	width: 80%;
+	display: flex;
+	margin: 50px auto 10px;
+}
+.directo_2 h2 {
+	width: 80%;
+	display: flex;
+	margin: 50px auto 10px;
+}
+.directo_interior, .directo_exterior {
+	width: 100%;
+	height: auto;
+	margin: 10px auto 30px;
+	min-height: 100px;
+	padding: 20px 20px;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 300;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	box-shadow: 6px 6px 13px #d5d5d5 , -6px -6px 13px #fff;
+	resize: vertical;
+	transition: ease .2s;
+	cursor: pointer;
+	display: inline-flex;
+}
 
+/*+++++++++++ PANTALLA LEGAL +++++++++++*/
+.pantalla_legal {
+	width: 90%;
+	margin: 0 auto;
+}
+.pantalla_legal p {
+	font-size: 13px;
+}
+.pantalla_legal h2 {
+	margin-top: 25px;
+}
 
+/*+++++++++++ GRUPOS +++++++++++*/
+.titulo_grupos h1 {
+	font-size: 40px;
+	line-height: 37px;
+	color: #000;
+	margin: 90px;
+	font-weight: 600;
+	text-align: center;
+}
+.caja_video_grupos {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
 
+.caja_video_grupos video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.caja_texto_video_grupos {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	vertical-align: middle;
+	height: 100%;
+	width: 100%;
+}
+.velo_video_grupos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+.caja1_texto_video_grupos {
+	width: 100%;
+}
+.caja_texto_video_grupos h1 {
+	font-size: 60px;
+	line-height: 50px;
+	color: #fff;
+	text-align: center;
+	margin: 0 auto;
+}
+.caja_texto_video_grupos p {
+	text-align: center;
+	margin: 0 auto;
+}
+.caja_info_grupos {
+	margin: 50px;
+}
+.info_grupo {
+	font-size: 35px;
+	color: #ef7d05;
+	padding-top: 15px;
+}
+.titulo_info_grupos h2 {
+	font-size: 25px;
+	color: #000;
+	line-height: 38px;
+	padding: 10px 0px 10px 0px;
+}
+/* VIDEOS MUSICA GRUPOS*/
+.o-video {
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-top: 56.25%;
+}
+.o-video > iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+}
+.caja_videos_grupos {
+	justify-content: center;
+	}
+.video_1 {
+	width: 90%;
+	margin: 0 auto;
+}
+.video_1 h2 {
+	width: 80%;
+	display: flex;
+	margin: 10px auto 0px;
+	justify-content: center;
+	font-weight: 500;
+}
+.video_grupo_1 {
+	width: 100%;
+	height: auto;
+	margin: 10px auto 30px;
+	min-height: 100px;
+	padding: 10px 10px;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 300;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	resize: vertical;
+	transition: ease .2s;
+	cursor: pointer;
+	display: inline-flex;
+}
+.caja_sumusica {
+	background-color: #ef7d05;
+}
+.titulo_musica_grupos h2 {
+	font-size: 25px;
+	color: #fff;
+	line-height: 38px;
+	padding: 32px 20px 20px 50px;
+}
+
+/* +++++++++++ HORARIO ++++++++++++ */
+.titulo_horario {
+	margin: 45px 20px 0px 0px;
+}
+.titulo_horario h1 {
+	font-size: 60px;
+	text-align: center;
+	line-height: 58px;
+}
+.subtitulo_horario {
+	width: 80%;
+	margin: 15px auto;
+	text-align: center;
+}
+.subtitulo_horario h2 {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+}
+.titulo_viernes_horario {
+	background-color: #333;
+	padding: 15px;
+}
+.titulo_viernes_horario h1 {
+	color: #fff;
+	font-size: 35px;
+	text-align: center;
+}
+.hora_horario {
+	display: inline-flex;
+	width: 33.3%;
+}
+.grupo_horario {
+	display: inline-flex;
+	width: 33.3%;
+}
+.lugar_horario {
+	display: inline-flex;
+	width: 33.4%;
+}
+.hora_texto_horario {
+	width: 100%;
+}
+.grupo_texto_horario {
+	width: 100%;
+}
+.lugar_texto_horario {
+	width: 100%;
+}
+
+.hora_texto_horario li {
+	background-color: #f39200;
+	text-align: center;
+	margin: 0px 0px 5px 0px;
+	height: 60px;
+	align-items: center;
+	display: flex;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+}
+.grupo_texto_horario li {
+	background-color: #e94e1b;
+	text-align: center;
+	margin: 0px 0px 5px 0px;
+	height: 60px;
+	align-items: center;
+	display: flex;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+}
+.lugar_texto_horario li {
+	background-color: #844e1e;
+	text-align: center;
+	margin: 0px 0px 5px 0px;
+	height: 60px;
+	align-items: center;
+	display: flex;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+
+}
+.hora_texto_horario li::before {
+	content: "";
+	position: relative;
+	top: 0px;
+	right: 0px;
+	left: 100%;
+	width: 0px;
+	height: 0px;
+	border-left-color: transparent;
+	border-bottom-color: transparent;
+	border-left: 20px solid #f39200;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+}
+.grupo_texto_horario li::before {
+	content: "";
+	position: relative;
+	top: 0px;
+	right: 0px;
+	left: 100%;
+	width: 0px;
+	height: 0px;
+	border-left-color: transparent;
+	border-bottom-color: transparent;
+	border-left: 20px solid #e94e1b;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+}
+.lugar_texto_horario li::before {
+	content: "";
+	position: relative;
+	top: 0px;
+	right: 0px;
+	left: 100%;
+	width: 0px;
+	height: 0px;
+	border-left-color: transparent;
+	border-bottom-color: transparent;
+	border-left: 0px solid transparent;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+}
+.hora_texto_horario a {
+	width: 100%;
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+	line-height: 12px;
+}
+.grupo_texto_horario a {
+	width: 100%;
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+	line-height: 12px;
+}
+.lugar_texto_horario a {
+	width: 100%;
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+	line-height: 12px;
+}
+.viernes_horario {
+	max-width: 900px;
+	margin: 0 auto;
+}
+/* ++++++++++++ COMO LLEGAR ++++++++++++++ */
+.titulo_comollegar h1 {
+	font-size: 35px;
+	margin: 15px;
+	line-height: 34px;
+	text-align: center;
+}
+.logo_ifa_comollegar {
+	margin: 0 auto;
+	justify-content: center;
+	display: flex;
+}
+.logo_ifa_comollegar img {
+	width: 300px;
+}
+.descripcion_comollegar p {
+	font-size: 14px;
+	text-align: justify;
+}
+.descripcion_comollegar {
+	margin: 40px;
+}
+.mapa_comollegar {
+	width: 100%;
+}
+.titulo2_comollegar h1 {
+	font-size: 40px;
+	color: #ef7d05;
+}
+.titulo2_comollegar {
+	margin: 35px;
+	text-align: center;
+}
+.iconos_opciones_comollegar i {
+	font-size: 100px;
+	margin: 20px;
+}
+.opciones_comollegar {
+	display: inline-flex;
+}
+.caja_opciones_texto {
+	margin: 20px;
+}
+.titulo_opciones h2 {
+	font-size: 35px;
+	margin: 0px 0px 10px 0px;
+}
