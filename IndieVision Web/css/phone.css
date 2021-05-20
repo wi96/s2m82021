@@ -47,7 +47,7 @@
   outline: none;
 }
 
-.boton_directoe{
+.boton_directo{
   padding-right: 22px; 
 }
 
@@ -93,10 +93,11 @@ span.icono_directo {
 }
 
 #header {
-    width: 100%;
-    height: 80px;
-    background-color: #000;
-    position: fixed;
+	width: 100%;
+	height: 80px;
+	background-color: #000;
+	position: fixed;
+	z-index: 100;
 }
 main{
 	padding-top: 80px;
@@ -138,6 +139,16 @@ main{
 	width: 150px;
 	float: right;
 }
+.login_menu {
+	align-items: center;
+	display: flex;
+	height: 100%;
+	width: 50px;
+	float: right;
+}
+.login_menu a {
+	color: #EF7D05;
+}
 .fa.fa-user {
 	margin-right: 5px;
 }
@@ -148,6 +159,69 @@ main{
     padding: 7px;
     align-items: center;
     display: flex;
+}
+.entradas_inicio {
+	width: 100%;
+	height: 100px;
+	background-color: #222;
+	align-items: center;
+	display: flex;
+}
+.entradas_inicio li {
+	width: auto;
+	background-color: #333;
+	padding: 20px;
+	margin: 0 auto;
+	height: auto;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	box-shadow: 3px 3px 6px #333 , -3px -3px 6px #555;
+	resize: vertical;
+	transition: ease .2s;
+	cursor: pointer;
+	display: inline-flex;
+}
+.entradas_inicio li:hover {
+	width: auto;
+	background-color: #ddd;
+	padding: 27px;
+	margin: 0 auto;
+	height: auto;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	box-shadow: 3px 3px 6px #333 , -3px -3px 6px #555;
+	resize: vertical;
+	transition: ease .4s;
+	cursor: pointer;
+	display: inline-flex;
+	font-size: 25px;
+}
+.entradas_inicio a {
+	font-size: 20px;
+	font-weight: 300;
+	color: #fff;
+	margin: 0 auto;
+	justify-content: center;
+	display: flex;
+	vertical-align: middle;
+	line-height: 19px;
+	text-decoration: none;
+}
+.entradas_inicio a:hover {
+	color:#000;
+	transition: ease .2s;
+}
+.cartel_inicio {
+	width: 100%;
+	margin-bottom: -7px;
+	max-width: 800px;
+	margin: 0 auto;
+	display: inherit;
+}
+.cartel_inicio:hover {
+	color:#fff;
 }
 /*+++++++++++++ HAMBURGUESA ++++++++++++*/
 	#burger:checked ~ #menu{
@@ -422,9 +496,10 @@ html,body {
 }
 
 .redes_sociales_perfil i {
-  cursor: pointer;
-  margin: 0 15px;
+  	cursor: pointer;
+  	margin: 0 15px;
 	color: #333333;
+	font-size: 40px;
 }
 .redes_sociales_perfil i:hover {
 	color: #EF7D05;
@@ -500,7 +575,6 @@ html,body {
 
 .menu_chat {
 	position: fixed;
-	top: 80px;
 	left: 0px;
 	right: 0px;
 	width: 100%;
@@ -565,7 +639,7 @@ html,body {
 	position: absolute;
 	z-index: -3;
 	background-size: auto;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-attachment: fixed;
 }
 .chat {
@@ -1471,14 +1545,16 @@ color:#fff;
 /* ++++++++++++ COMO LLEGAR ++++++++++++++ */
 .titulo_comollegar h1 {
 	font-size: 35px;
-	margin: 15px;
+	padding: 25px 10px 0px 10px;
 	line-height: 34px;
 	text-align: center;
+	background-color: #fff;
 }
 .logo_ifa_comollegar {
 	margin: 0 auto;
 	justify-content: center;
 	display: flex;
+	background-color: #fff;
 }
 .logo_ifa_comollegar img {
 	width: 300px;
@@ -1493,25 +1569,71 @@ color:#fff;
 .mapa_comollegar {
 	width: 100%;
 }
+.titulo2_comollegar {
+	padding: 35px;
+	text-align: center;
+	background-color: #222;
+}
 .titulo2_comollegar h1 {
-	font-size: 40px;
+	font-size: 33px;
 	color: #ef7d05;
+	line-height: 38px;
 }
 .titulo2_comollegar {
-	margin: 35px;
 	text-align: center;
 }
-.iconos_opciones_comollegar i {
-	font-size: 100px;
-	margin: 20px;
-}
-.opciones_comollegar {
+.iconos_opciones_comollegar {
 	display: inline-flex;
 }
-.caja_opciones_texto {
-	margin: 20px;
+.iconos_opciones_comollegar i {
+	margin-right: 15px;
+	font-size: 30px;
+	color: #ef7d05;
+}
+.opciones_comollegar {
+	padding: 20px 35px 20px 35px;
+	background-color: #222;
 }
 .titulo_opciones h2 {
-	font-size: 35px;
+	font-size: 33px;
 	margin: 0px 0px 10px 0px;
+	line-height: 32px;
 }
+.subtitulo_opciones p {
+	color: #fff;
+}
+.titulo_opciones h2 {
+	color: #fff;
+}
+/* ++++++++++++ ZONA DE ACAMPADA ++++++++++++++ */
+.titulo_acampada h1 {
+	font-size: 40px;
+	line-height: 38px;
+	text-align: center;
+	margin: 30px;
+}
+.texto_acampada p {
+	margin: 30px;
+	text-align: justify;
+}
+.imagen_zonadeacampada {
+	width: 100%;
+	height: 400px;
+	background-color: #ef7d05;
+}
+.instalaciones_acampada h2 {
+	font-size: 25px;
+	margin: 20px;
+}
+.iconos_acampada i {
+	font-size: 40px;
+	margin: 0px 25px 10px 25px;
+}
+.iconos_acampada h3 {
+	font-size: 40px;
+	display: inline-block;
+	margin-left: 15px;
+}
+
+
+

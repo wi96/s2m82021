@@ -1,6 +1,6 @@
 @media screen and (min-width:800px){
-	main{
-		padding-top: 122px;
+	main {
+		padding-top: 120px;
 	}
 	#menu li {
 	padding: 10px 10px;
@@ -71,5 +71,11 @@
 		.video_1 {
 		width: 40%;
 	}
-
+	/*++++++++++++++++++++ COMO LLEGAR ++++++++++++++++++*/
+	.opciones_comollegar {
+	padding: 20px 35px 20px 35px;
+	background-color: #222;
+	width: 50%;
+	float: left;
+}
 }
