@@ -65,10 +65,13 @@
 	}
 	/*++++++++++++++++++++ VIDEOS GRUPOS ++++++++++++++++++*/
 	.caja_videos_grupos {
-	display: inline-flex;
-	justify-content: center;
+		display: inline-flex;
+		justify-content: center;
+		margin: 0 auto;
+		width: 100%;
+		padding: 40px;
 	}
-		.video_1 {
+	.video_1 {
 		width: 40%;
 	}
 	/*++++++++++++++++++++ COMO LLEGAR ++++++++++++++++++*/
