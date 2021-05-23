@@ -83,8 +83,9 @@
 }
 	/*++++++++++++++++++++ HORARIO ++++++++++++++++++*/
 	.viernes_horario a {
-	font-size: 20px;
-}
+		font-size: 20px;
+		line-height: 18px;
+	}
 	/*++++++++++++++++++++ PUBLICAR ++++++++++++++++++*/
 	.imagenperfil_publicar {
 	width: 120px;

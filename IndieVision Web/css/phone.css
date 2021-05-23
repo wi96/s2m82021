@@ -158,7 +158,7 @@ main{
     text-decoration: none;
     padding: 7px;
     align-items: center;
-    display: flex;
+
 }
 .entradas_inicio {
 	width: 100%;
@@ -1316,10 +1316,13 @@ color:#fff;
 
 /*+++++++++++++++++ DIRECTO ++++++++++++++++*/
 .titulo_directo h1 {
-	width: 80%;
-	font-size: 30px;
-	line-height: 28px;
-	color: #EF7D05;
+    width: 80%;
+    font-size: 30px;
+    line-height: 28px;
+    color: #EF7D05;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
 }
 .titulo_directo p {
 	text-align: center;
@@ -1743,24 +1746,36 @@ color:#fff;
 	margin: 30px;
 	text-align: justify;
 }
+.imagen_zonadeacampada {
+    background-color: #fff;
+}
 .imagen_zonadeacampada img {
 	width: 100%;
 	height: auto;
-	background-color: #fff;
+
 }
 .instalaciones_acampada h2 {
 	font-size: 25px;
 	margin: 20px;
 }
-.iconos_acampada i {
-	font-size: 40px;
-	margin: 0px 25px 10px 25px;
+.texto_titulo_iconos_acampada {
+    background-color: orange;
+    padding: 10px;
 }
-.iconos_acampada h3 {
-	font-size: 40px;
-	display: inline-block;
-	margin-left: 15px;
+.texto_iconos_acampada p {
+    padding: 20px;
 }
-
-
+.texto_titulo_iconos_acampada h3 {
+    padding: 10px;
+    display: inline-flex;
+    font-size: 20px;
+}
+.instalaciones_acampada {
+    background-color: #fff;
+    max-width: 500px;
+    margin: 25px auto;
+}
+.texto_titulo_iconos_acampada i {
+    margin-left: 10px;
+}
 
