@@ -350,7 +350,6 @@ main{
 
 html,body {
   background: #efefef;
-  font-family: "Arial";
 }
 
 .container_perfil {
@@ -381,7 +380,47 @@ html,body {
   color: #fff;
 }
 
+.chat_button {
+	list-style: none;
+	text-align: center;
+	width: 100%;
+	margin-top: 40px;
+}
 
+.chat_button li {
+	position: relative;
+	display: inline-block;
+}
+
+.chat_button a {
+	display: block;
+	text-decoration: none;
+	background-color: #f7f7f7;
+	color: #a7a7a7;
+	margin: 20px 20px;
+	width: 60px;
+	height: 60px;
+	position: relative;
+	text-align: center;
+	line-height: 60px;
+	border-radius: 50%;
+	box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+	border: solid 1px transparent;
+}
+
+.chat_button a:hover {
+  text-decoration: none;
+  color: #555;
+  background: #EF7D05;
+	transition: 0.3s all ease-in;
+}
+.chat_button a:hover {
+	color: #fff;
+}
+.chat_button i {
+	color: #2A2A2A;
+	 font-size: 23px;
+}
 
 .principal_perfil {
       padding: 20px 20px 0px 20px;
@@ -1384,12 +1423,12 @@ color:#fff;
 
 /*+++++++++++ GRUPOS +++++++++++*/
 .titulo_grupos h1 {
-	font-size: 40px;
-	line-height: 37px;
-	color: #000;
-	margin: 90px;
-	font-weight: 600;
-	text-align: center;
+    font-size: 40px;
+    line-height: 37px;
+    color: #000;
+    margin: 70px;
+    font-weight: 600;
+    text-align: center;
 }
 .caja_video_grupos {
   position: relative;
@@ -1453,9 +1492,10 @@ color:#fff;
 	margin: 50px;
 }
 .info_grupo {
-	font-size: 35px;
-	color: #ef7d05;
-	padding-top: 15px;
+    font-size: 28px;
+    color: #ef7d05;
+    padding-top: 15px;
+    line-height: 26px;
 }
 .titulo_info_grupos h2 {
 	font-size: 25px;
@@ -1736,30 +1776,39 @@ color:#fff;
 	color: #fff;
 }
 /* ++++++++++++ ZONA DE ACAMPADA ++++++++++++++ */
+.texto_acampada p {
+    margin: 30px;
+    text-align: justify;
+    text-align: center;
+}
+.imagen_zonadeacampada img {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.imagen_zonadeacampada {
+    background-color: #fff;
+}
 .titulo_acampada h1 {
 	font-size: 40px;
 	line-height: 38px;
 	text-align: center;
 	margin: 30px;
 }
-.texto_acampada p {
-	margin: 30px;
-	text-align: justify;
+.instalaciones_acampada {
+    width: 100%;
+    margin: 25px auto;
+    display: inline-block;
 }
-.imagen_zonadeacampada {
-    background-color: #fff;
-}
-.imagen_zonadeacampada img {
-	width: 100%;
-	height: auto;
 
-}
 .instalaciones_acampada h2 {
 	font-size: 25px;
 	margin: 20px;
 }
 .texto_titulo_iconos_acampada {
-    background-color: orange;
+    background-color: #e94e1b;
     padding: 10px;
 }
 .texto_iconos_acampada p {
@@ -1769,13 +1818,49 @@ color:#fff;
     padding: 10px;
     display: inline-flex;
     font-size: 20px;
-}
-.instalaciones_acampada {
-    background-color: #fff;
-    max-width: 500px;
-    margin: 25px auto;
+    color: #fff;
 }
 .texto_titulo_iconos_acampada i {
     margin-left: 10px;
+    color: #fff;
+}
+.caja_iconos_acampada {
+    margin: 0 25px;
+}
+.texto_iconos_acampada {
+    margin: 0 25px;
+    background-color: #fff;
 }
 
+/* ++++++++++++ LUGAR ++++++++++++++ */
+
+.texto_titulo_iconos_lugar_1 {
+    background-color: #f39200;
+    padding: 10px;
+}
+.texto_titulo_iconos_lugar_2 {
+    background-color: #e94e1b;
+    padding: 10px;
+}
+.texto_titulo_iconos_lugar_3 {
+    background-color: #844e1e;
+    padding: 10px;
+}
+.texto_titulo_iconos_lugar_1 h3 {
+    padding: 10px;
+    display: inline-flex;
+    font-size: 20px;
+    color: #fff;
+}
+.texto_titulo_iconos_lugar_2 h3 {
+    padding: 10px;
+    display: inline-flex;
+    font-size: 20px;
+    color: #fff;
+}
+.texto_titulo_iconos_lugar_3 h3 {
+    padding: 10px;
+    display: inline-flex;
+    font-size: 20px;
+    color: #fff;
+}
