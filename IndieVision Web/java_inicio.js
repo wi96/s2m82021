@@ -23,9 +23,9 @@ function initImageUpload(box) {
   function checkType(file){
     let imageType = /image.*/;
     if (!file.type.match(imageType)) {
-      throw 'Datei ist kein Bild';
+      throw 'El archivo no es una imagen';
     } else if (!file){
-      throw 'Kein Bild gewählt';
+      throw 'No se seleccionó ninguna imagen';
     } else {
       previewImage(file);
     }
