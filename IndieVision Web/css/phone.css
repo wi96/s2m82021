@@ -264,7 +264,7 @@ main{
     .toggle-button:after {
         height:2px;
         background-color:black;
-        bottom:calc(100% / 4);
+        bottom:calc(100% / 3.5);
     }
 
   input#burger:checked + .toggle-button:before, input#burger:checked + .toggle-button:after {
