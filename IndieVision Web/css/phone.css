@@ -1412,8 +1412,8 @@ color:#fff;
 
 /*+++++++++++ PANTALLA LEGAL +++++++++++*/
 .pantalla_legal {
-	width: 90%;
-	margin: 0 auto;
+    width: 90%;
+    margin: 15PX auto;
 }
 .pantalla_legal p {
 	font-size: 13px;
