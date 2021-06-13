@@ -1561,6 +1561,33 @@ color:#fff;
 }
 
 /* +++++++++++ HORARIO ++++++++++++ */
+.cajabotones_horario {
+    text-align: center;
+}
+.cajabotones_horario input {
+    width: auto;
+    background-color: #333;
+    padding: 10px;
+    height: auto;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 2px 2px 4px #333, -2px -2px 4px #fff;
+    resize: vertical;
+    transition: ease .2s;
+    cursor: pointer;
+    display: inline-flex;
+    color: #fff;
+    margin: 5px;
+    font-size: 13px;
+}
+.cajabotones_horario input:hover {
+    background-color: #ef7d05;
+}
+input#todos {
+    display: flex;
+    margin: 10px auto;
+}
 .titulo_horario {
 	margin: 45px 20px 0px 0px;
 }

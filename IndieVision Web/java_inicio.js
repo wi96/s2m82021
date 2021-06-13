@@ -1,4 +1,55 @@
 // JavaScript Document
+
+
+		//Al clicar el boton viernes
+		document.getElementById("viernes").addEventListener("click" ,muestraviernes);
+		var viernes1=document.getElementById("viernes1");
+		function muestraviernes(){
+			document.getElementById("viernes1").style.display = "block";
+			document.getElementById("sabado1").style.display = "none";
+			document.getElementById("domingo1").style.display = "none";
+			document.getElementById("lunes1").style.display = "none";
+		}
+
+		//Al clicar el boton sabado
+		document.getElementById("sabado").addEventListener("click" ,muestrasabado);
+		var sabado1=document.getElementById("sabado1");
+		function muestrasabado(){
+			document.getElementById("viernes1").style.display = "none";
+			document.getElementById("sabado1").style.display = "block";
+			document.getElementById("domingo1").style.display = "none";
+			document.getElementById("lunes1").style.display = "none";
+		}
+		//Al clicar el boton domingo
+		document.getElementById("domingo").addEventListener("click" ,muestradomingo);
+		var domingo1=document.getElementById("domingo1");
+		function muestradomingo(){
+			document.getElementById("viernes1").style.display = "none";
+			document.getElementById("sabado1").style.display = "none";
+			document.getElementById("domingo1").style.display = "block";
+			document.getElementById("lunes1").style.display = "none";
+		}
+		//Al clicar el boton lunes
+		document.getElementById("lunes").addEventListener("click" ,muestralunes);
+		var lunes1=document.getElementById("lunes1");
+		function muestralunes(){
+			document.getElementById("viernes1").style.display = "none";
+			document.getElementById("sabado1").style.display = "none";
+			document.getElementById("domingo1").style.display = "none";
+			document.getElementById("lunes1").style.display = "block";
+		}
+
+		//Al clicar el boton todos
+		document.getElementById("todos").addEventListener("click" ,muestratodos);
+		var todos1=document.getElementById("todos1");
+		function muestratodos(){
+			document.getElementById("viernes1").style.display = "block";
+			document.getElementById("sabado1").style.display = "block";
+			document.getElementById("domingo1").style.display = "block";
+			document.getElementById("lunes1").style.display = "block";
+		}
+
+
 function initImageUpload(box) {
   let uploadField = box.querySelector('.image-upload');
 
@@ -79,3 +130,14 @@ function initDropEffect(box){
     
   }
 }
+
+
+
+
+
+
+
+
+
+
+
