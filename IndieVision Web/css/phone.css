@@ -1862,6 +1862,12 @@ input#todos {
 
 /* ++++++++++++ LUGAR ++++++++++++++ */
 
+.imagen_zonadeacampada {
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .texto_titulo_iconos_lugar_1 {
     background-color: #f39200;
     padding: 10px;
